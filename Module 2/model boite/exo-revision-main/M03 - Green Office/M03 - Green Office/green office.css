@@ -1,0 +1,66 @@
+.container{
+    max-width: 750px;
+    margin-inline: auto;
+    
+
+}
+body{
+    background-image: url("./img/fond.png")
+}
+nav,
+h2{
+    font-family: Oswald;
+    color:#b8cb21;
+}
+.button {
+    background-color: #b8cb21;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+
+}
+.block{
+    background-color:#b8cb21;
+    
+}
+h2
+nav{
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
+main{
+    background-color: white;
+    padding: 20px;
+    height: 700px;
+}
+main img{
+    float: left; 
+    margin-right: 10px;
+}
+main section+section {
+    margin-top: 65px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+ul li+li+li{
+    margin-right: 20px;
+}
+nav{
+    font-size: 1.3em;
+}

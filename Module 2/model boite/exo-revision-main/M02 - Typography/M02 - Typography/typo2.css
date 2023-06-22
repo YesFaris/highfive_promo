@@ -1,0 +1,106 @@
+
+h1{
+   text-align: center;
+   font-size: 4em;
+   font-family: Blacksword;
+}
+
+h2{
+font-size: 2.5em;
+word-spacing: 25px;
+font-family: Blacksword;
+}
+
+h3{
+   font-size: 1.5em;
+   word-spacing: 10px;
+   font-family: Blacksword;
+}
+
+p{
+   font-family: cardo;
+   font-size: 1.4em;
+   text-indent: 25px;
+   text-align: justify;
+}
+
+.container{
+   max-width: 50%;
+   margin-inline: auto;
+   line-height: 50px;
+
+}
+
+.block{
+   text-align: center;
+}
+a{
+   text-decoration: none;
+   color: pink;
+}
+blockquote p::before {
+ content: "\";
+}
+blockquote p::after {
+content: "\";
+}
+blockquote p{
+   font-size: 1.4em;
+}
+
+   @font-face {
+      font-family: Blacksword;
+      src: url(./fonts/Blacksword.otf);
+      font-style: normal;
+      font-weight: 400;
+   }
+
+
+ 
+   @font-face {
+         font-family: cardo;
+         src: url(./fonts/cardo/cardo-bold.woff);
+         font-style: bold;
+         font-weight: 700;
+   }
+   
+      @font-face {
+         font-family: cardo;
+         src: url(./fonts/cardo/cardo-italic.woff);
+         font-style: italic;
+         font-weight: 400;
+      }
+   
+      @font-face {
+         font-family: cardo;
+         src: url(./fonts/cardo/cardo-regular.woff);
+         font-style: normal;
+         font-weight: 400;
+      }
+
+   blockquote{
+      font-style: italic;
+      font-size: 15px;
+   }
+
+   footer{
+      font-size: 10px;
+      text-align: justify;
+      max-width: 50%;
+      margin-inline: auto;
+      
+   }
+   .img1{
+      width: 50%;
+   }
+   .img2{
+      float: right;
+      width: 50%;
+   }
+   cite{
+      margin-left: 490px;
+   }
+   p{
+      font-family: cardo;
+   }
+   

@@ -1,0 +1,29 @@
+/*
+Le document (body)
+*/
+body {
+	color: #555; /* #555555 */
+	font-family: sans-serif;
+}
+
+/*
+Le conteneur global
+*/
+.container {
+	max-width: 980px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* 
+Toutes les blocs qui seront encadrés
+*/
+.outline {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	margin: 10px;
+}
+/*
+Le footer du document complet
+*/
+.copyright {text-align: center; }

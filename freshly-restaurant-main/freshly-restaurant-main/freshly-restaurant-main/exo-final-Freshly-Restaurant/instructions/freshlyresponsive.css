@@ -1,0 +1,366 @@
+/* ++++++++++++++++++++++++++++++
+RESPONSIVE DE HOME
+++++++++++++++++++++++++++++++++ */
+
+/* ============================
+tablette
+============================= */
+@media screen and (min-width: 781px) and (max-width: 980px) {
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.footer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	h4 {
+		padding-inline: 3rem;
+	}
+
+	.footer section {
+		margin-right: 2rem;
+	}
+}
+
+/* ============================
+desktop
+============================== */
+@media screen and (min-width: 981px) {
+	.container {
+		max-width: 1400px;
+		margin-inline: auto;
+	}
+
+	header a {
+		display: flex;
+	}
+
+	a span {
+		position: relative;
+		bottom: -1.5rem;
+	}
+
+	.navigateur {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1400px;
+		margin-inline: auto;
+		margin-bottom: 3rem;
+		padding-top: 2rem;
+	}
+
+	nav {
+		background-color: transparent;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+		gap: 4rem;
+	}
+
+	nav a {
+		transition: 0.5s;
+		background-color: var(--clr-princiale);
+	}
+
+	nav a:hover {
+
+		background-color: #fff;
+		color: var(--clr-secondaire);
+		transform: scale(1.5);
+	}
+
+	header img {
+		transition: 0.5s;
+	}
+
+	header img:hover {
+		transform: scale(0.9);
+	}
+
+	.float {
+		float: right;
+		margin-left: 0.6rem;
+	}
+
+	article>img {
+		width: 500px;
+	}
+
+	.menus {
+		display: flex;
+		gap: 2rem;
+	}
+
+	h1,
+	h2 {
+		padding-top: 3rem;
+	}
+
+	.footer {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	h4 {
+		padding-inline: 5em;
+	}
+
+	.over:hover .contenue {
+		opacity: 1;
+	}
+
+	.menus a {
+		transition: 0.5s;
+	}
+
+	.menus a:hover {
+		background-color: #950000;
+		transform: scale(0.9);
+	}
+}
+
+/* =======================
+hover
+==================== */
+.over {
+	position: relative;
+}
+
+.contenue {
+	position: absolute;
+	top: 0;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgb(76, 67, 67, 0.4);
+}
+
+.price {
+	position: absolute;
+	border: 4px solid white;
+	color: white;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	display: block;
+	padding: 2.5rem;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++
+RESPONSIVE DE ABOUT
+++++++++++++++++++++++++++++++++++++++++ */
+
+/* =======================
+tablette
+======================== */
+@media screen and (min-width: 781px) and (max-width: 980px) {
+	.restaurant {
+		column-count: 2;
+		margin-bottom: 2rem;
+	}
+}
+
+/* ================
+desktop
+=================== */
+@media screen and (min-width: 981px) {
+	.container {
+		max-width: 1400px;
+		margin-inline: auto;
+	}
+
+	.navigateur {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1400px;
+		margin-inline: auto;
+		margin-bottom: 3rem;
+		padding-top: 2rem;
+	}
+
+	.restaurant {
+		column-count: 2;
+		margin-bottom: 2rem;
+	}
+
+	article {
+		text-align: center;
+	}
+
+	main img {
+		transition: 1s;
+	}
+
+	main img:hover {
+		transform: scale(0.9);
+
+	}
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++
+RESPONSIVE DE MENU
+++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* =======================
+tablette
+======================== */
+@media screen and (min-width: 781px) and (max-width: 980px) {
+	.position {
+		grid-column: 3/4;
+		width: 100%;
+	}
+
+	.dessert .over:nth-of-type(3),
+	.cocktail .over:nth-of-type(3) {
+		grid-column: 3/4;
+		width: 100%;
+	}
+
+	.repas,
+	.dessert,
+	.cocktail {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		grid-auto-rows: auto;
+	}
+}
+
+/* ================
+desktop
+=================== */
+@media screen and (min-width: 981px) {
+	button:hover {
+		background-color: #950000;
+		color: #fff;
+	}
+
+	.position {
+		grid-column: 3/4;
+		width: 100%;
+	}
+
+	.dessert .over:nth-of-type(3),
+	.cocktail .over:nth-of-type(3) {
+		grid-column: 3/4;
+		width: 100%;
+	}
+
+	.container {
+		max-width: 1400px;
+		margin-inline: auto;
+	}
+
+	.navigateur {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1400px;
+		margin-inline: auto;
+		margin-bottom: 3rem;
+		padding-top: 2rem;
+	}
+
+	.repas,
+	.dessert,
+	.cocktail {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		grid-auto-rows: auto;
+	}
+
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++
+RESPONSIVE DE CONTACT
+++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ===================
+tablette
+===================== */
+@media screen and (min-width: 781px) and (max-width: 980px) {
+	.formulaire {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.reservation {
+		width: 50%;
+	}
+
+	.details {
+		width: 50%;
+	}
+
+	textarea {
+		width: 100%;
+		border: none;
+		height: 7rem;
+		margin-block: 0.5rem 1rem;
+		resize: none;
+		padding: 1rem;
+
+	}
+
+	article {
+		text-align: center;
+	}
+}
+
+/* ==================
+desktop
+==================== */
+@media screen and (min-width: 981px) {
+	.container {
+		max-width: 1400px;
+		margin-inline: auto;
+	}
+
+	.navigateur {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1400px;
+		margin-inline: auto;
+		margin-bottom: 3rem;
+		padding-top: 2rem;
+	}
+
+	.formulaire {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.reservation {
+		width: 50%;
+	}
+
+	.details {
+		width: 50%;
+	}
+
+	textarea {
+		width: 100%;
+		border: none;
+		height: 7rem;
+		margin-block: 0.5rem 1rem;
+		resize: none;
+		padding: 1rem;
+
+	}
+
+	input[type="submit"]:hover {
+		background-color: #fff;
+		color: var(--clr-secondaire);
+		border: 1px solid var(--clr-secondaire);
+	}
+}

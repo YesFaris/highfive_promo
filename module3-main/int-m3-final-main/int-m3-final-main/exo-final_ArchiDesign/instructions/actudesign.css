@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* body */
+body{
+    font-family: "Nunito";
+   font-size: 18px;
+}
+/* header */
+nav, h1, h2, h3{
+font-family: "Fjalla one";
+}
+span{
+    color: white;
+    font-size: 20px;
+    font-family: "Fjalla one";
+}
+header{
+    background-color: #00748d;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 30px;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+  justify-content: space-between;
+}
+nav li{
+    list-style: none;
+    font-size: 20px;
+}
+ul > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+ul > li > a:hover{
+    background-color: white;
+    color: #00748d;
+}
+/* main */
+h1{
+    color: #cb8606;
+    /* display: inline; */
+    margin-bottom: 40px;
+  
+}
+h2{
+    color: #00748d;
+}
+main li{
+    list-style: circle;
+   list-style-image: url(./images/circle.png)
+    
+}
+
+.quote::before{
+    content: url(./images/quote.png);
+    float: left;
+    margin-right: 10px;
+}
+.client::before{
+    content: url(./images/client.png);
+    float: left;
+margin-right: 10px;
+}
+.client{
+    font-style: italic;
+    color: #00748d;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+}
+.wrapper{
+    /* max-width: 50%; */
+    margin-right: 50px;
+}
+main{
+    max-width: 1500px;
+    margin-inline: auto;
+}
+main img{
+    max-width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+.art{
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+article{
+    margin-right: 70px;
+} 
+main a{
+    text-decoration: none;
+    color: white;
+    background-color: #00748d;
+    padding: 10px;
+    transition: 0.5s;
+   
+}
+main a:hover{
+    color: #00748d;
+    background-color: #fff;
+    border: 1px solid #00748d;
+}
+article{
+    margin: 50px;
+}
+/* footer */
+footer{
+    margin-top: 20px;
+    background-color: #444;
+    color: white;
+    
+}
+.fot{
+font-size: 25px;
+}
+
+.ft{
+    padding-top: 20px;
+    text-align: center;
+}
+.pied{
+    background-color: #00748d;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 30px;
+}
+footer a > i{
+    color: white;
+ }
+ 

@@ -1,0 +1,23 @@
+body{
+    max-width: 600px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif ;
+    line-height: 21px;
+    font-weight: 100;
+    background-color: #eee;
+    margin-inline: auto;
+}
+p{
+    text-align: justify;
+}
+h2{
+    background-color: white;
+    border-bottom: solid 3px #ccc;
+}
+h1{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: green;
+}

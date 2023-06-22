@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+    font-family: "Open Sans", sans-serif;
+    margin-inline: auto;
+    color: #aeacac;
+}
+
+header{
+    display: flex;
+}
+nav{
+    background-color: #fcfcfc;
+    width: 100%;
+
+}
+nav ul {
+    display: flex;
+    color: white;
+    font-family: "Candal";
+    justify-content: space-evenly;
+    padding-top: 20px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #1a4450;
+   
+}
+h1{
+font-family: "Candal", sans-serif;
+font-size:2em ;
+}
+.fond p{
+    font-family: "Candal", sans-serif;
+    font-size:0.9em ;
+}
+.fond{
+    padding:200px;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+.block{
+    background-color: #fb8b9b;
+    color: #ebccc9;
+    padding: 15px;
+}
+h2{
+font-family: "Candal", sans-serif;
+font-size: 1em;
+color:  #213e4e;
+text-align: center;
+border-top: 1px dotted;
+border-left:1px dotted;
+border-right:1px dotted;
+margin-top: 20px;
+padding-top:20px;
+}
+h3{
+    text-align: center;
+    border: 1px solid #213e4e;
+    background-color: #213e4e;
+     font-family: "Candal", sans-serif; 
+     font-size: 0.9em;  
+     color: white;
+     padding: 20px;
+}
+footer{
+    padding-top: 20px;
+    text-align: center;
+    background-color: #213e4e;
+    color: #e7f0ff;
+    font-size: 10px;
+}
+footer ul{
+    display: flex;
+    color: white;
+    font-family: "Candal";
+    justify-content: space-evenly;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    color:#e7f0ff;
+    text-decoration: none ;
+}
+.color{
+    color: #fb8b9b;
+    font-size: 2em;
+}
+.flex{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-content: center;
+}
+.border{
+    border:2px dotted;
+    padding: 10px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+
+section a{
+    text-decoration: none;
+    border: 1px solid #fb8b9b;
+    color: white;
+    background-color: #fb8b9b;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+i{
+    width: 100%;
+ }

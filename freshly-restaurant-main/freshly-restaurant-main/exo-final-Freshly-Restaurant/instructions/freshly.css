@@ -1,0 +1,480 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++
+CSS DE HOME: DEBUT 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/* ======================
+Les feuilles css externes
+==================== */
+@import url("freshlyfont.css");
+
+/* ===================
+body
+================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* max-width: 780px; */
+    margin: 0;
+    /* margin-inline: auto; */
+    font-family: "athiti";
+    font-size: 1.12rem;
+}
+
+:root {
+    --clr-princiale: #ebe3db;
+    --clr-secondaire: #4c4343;
+}
+
+/* ==========================
+insertion des icones
+========================== */
+main h1::before,
+main h1::after,
+main h2::before,
+main h2::after,
+main h3::before,
+main h3::after,
+header span::before,
+header span::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    font-size: 0.5rem;
+    position: relative;
+    bottom: 0.3rem;
+    padding: 0.5rem;
+    color: #950000;
+}
+
+section li {
+    list-style: none;
+}
+
+section li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    font-size: 0.5rem;
+    position: relative;
+    bottom: 0.3rem;
+    padding: 0.5rem;
+    color: #950000;
+    font-weight: 900;
+}
+
+/* ====================
+slick
+================== */
+.slick-prev:before {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 2rem;
+    font-size: 1.5rem;
+}
+
+.slick-next.slick-arrow::before {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 2rem;
+    font-size: 1.5rem;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #950000;
+    font-size: 0.5rem;
+}
+
+.slide div {
+    position: relative;
+    z-index: -1;
+}
+
+/* ==================
+header
+===================== */
+
+header {
+    text-align: center;
+    background-image: linear-gradient(#ebe3db, white, white);
+
+}
+
+header a {
+    text-decoration: none;
+    width: 100%;
+}
+
+header span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    display: block;
+}
+
+nav {
+    background-color: var(--clr-princiale);
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav a {
+    color: black;
+    font-weight: 700;
+    display: block;
+    padding: 0.5rem;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+.activepage {
+    background-color: var(--clr-secondaire);
+    color: white;
+}
+
+
+/* =======================
+les tailles de titres 
+======================== */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "merienda";
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h1:hover {
+    transform: translateY(-12px);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h2:hover {
+    transform: translateY(-12px);
+}
+
+h3:hover {
+    transform: translateY(-12px);
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h4:hover {
+    transform: translateY(-12px);
+}
+
+/* =======================
+main
+===================== */
+
+img {
+    max-width: 100%;
+}
+
+main section a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: var(--clr-secondaire);
+    padding: 0.5rem;
+    display: block;
+    margin-inline: 5%;
+
+}
+
+.menus section {
+    background-color: var(--clr-princiale);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+section ul {
+    padding-left: 0;
+}
+
+section li {
+    border-bottom: 1px dotted;
+    padding: 0.5rem;
+
+}
+
+.menus li {
+    font-size: 1rem;
+}
+
+main section>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    display: none;
+}
+
+b {
+    font-size: 3.125rem;
+}
+
+/* =====================
+footer
+======================== */
+footer section {
+    text-align: center;
+}
+
+.footer {
+    background-image: url(./ressources/images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 1rem;
+    color: #fff;
+}
+
+.footer section {
+    padding-bottom: 1rem;
+}
+
+.footer h4 {
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted;
+}
+
+.lastfooter {
+    padding-top: 1rem;
+    background-color: #444444;
+    color: #fff;
+}
+
+.lastfooter a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+/* =============
+	hover footer icone
+	================== */
+.facebook:hover {
+    color: rgb(63, 63, 214);
+}
+
+.instagram:hover {
+    color: rgb(214, 54, 54);
+}
+
+.pinterest:hover {
+    color: red;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++
+FIN CSS DE HOME
+++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++
+DEBUT CSS DE ABOUT
++++++++++++++++++++++++++++++++++++++++++++++ */
+.restaurant {
+    background-color: var(--clr-princiale);
+    text-align: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.restaurant img {
+    box-shadow: 0.2rem 0.2rem 10px black;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++
+FIN CSS DE ABOUT
+++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++
+DEBUT CSS DE MENUS
++++++++++++++++++++++++++++++++++++++++++++ */
+.wrapper article {
+    text-align: center;
+}
+
+button {
+    background-color: var(--clr-princiale);
+    font-size: 1rem;
+    border: 1px solid var(--clr-princiale);
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding: 1rem;
+}
+
+.plat {
+    text-align: center;
+    background-color: var(--clr-princiale);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-rows: auto;
+}
+
+.plat img {
+    box-shadow: 0.2rem 0.2rem 10px black;
+}
+
+.repas,
+.dessert,
+.cocktail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-rows: auto;
+}
+
+.position {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+}
+
+.dessert .over:nth-of-type(3),
+.cocktail .over:nth-of-type(3) {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+}
+
+/* +++++++++++++++++++++++++++++++
+FIN DU CSS MENUS
++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++
+DEBUT CSS DE CONCTACT
++++++++++++++++++++++++++++++++++++++++ */
+.italic {
+    font-style: italic;
+    text-align: center;
+}
+
+.contactp {
+    text-align: center;
+}
+
+label::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 free";
+    color: #950000;
+    font-size: 0.3rem;
+    font-weight: bold;
+    position: relative;
+    top: -0.5rem;
+    left: -0.3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dotted #950000;
+
+}
+
+.Email:before {
+    content: "";
+}
+
+.italic span::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 free";
+    color: #950000;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px dotted #950000;
+
+
+}
+
+form {
+    background-color: var(--clr-princiale);
+    text-align: left;
+    padding: 2rem;
+    max-width: 70%;
+    margin-inline: 15%;
+
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-family: "merienda";
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--clr-princiale);
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    max-width: 70%;
+    margin-inline: 15%;
+    background-color: var(--clr-secondaire);
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    height: 7rem;
+    margin-block: 0.5rem 1rem;
+    resize: none;
+
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++
+FIN DU CSS DE CONTACT
+++++++++++++++++++++++++++++++++++++++++ */

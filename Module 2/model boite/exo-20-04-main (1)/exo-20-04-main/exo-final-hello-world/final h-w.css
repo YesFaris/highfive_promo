@@ -1,0 +1,229 @@
+body{
+    font-family: Lato, serif;
+}
+.header{
+    text-align: center;
+}
+h1{
+    color: #40CCEA;
+    text-align: center;
+}
+li{
+    list-style: none;
+    color: white;
+}
+button{
+    background-color: #0096D0;
+    padding: 10px;
+    border: #0096D0;
+    border-radius: 6px;
+    
+}
+span{
+    color: red;
+}
+.color{
+    color:  rgb(167, 113, 13);
+    display: inline-block;
+}
+.fond{
+ background-image:url(./instructions/ressources/fond.jpg);
+background-repeat:no-repeat;
+background-size: cover;
+background-position:100%;
+padding: 1em;
+margin-top: 15px;
+
+
+}
+.fond2{
+    background-color: white;
+    width: 25%;
+    padding: 2%;
+    margin-left: 26%;
+    
+}
+.footer{
+    text-align: center;
+    background-color: #0096D0;
+    color: white;
+    padding-top: 10px;
+   
+}
+footer a{
+    color: white;
+}
+.float1{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.float2{
+    float: right;
+    margin-left: 10px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+main{
+    width: 90%;
+    max-width: 900px;
+    margin-inline: auto;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.image{
+ text-align: center;
+}
+ul{
+    display: flex;
+    justify-content:center ;
+    gap: 40px;
+    align-items: center;
+}
+nav{
+    background-color: #0096D0;
+    padding-block: 15px;
+}
+h3,
+hr{
+    clear: both;
+}
+.color1{
+color:#4267B2 ;
+
+}
+.color2{ 
+color: #1da1f2 ;
+}
+.color3{
+color: #bd081c ;
+}
+.color4{
+color: #8948C1 ;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+        width: 90%;
+        max-width: 900px;
+        margin-inline: auto;
+        line-height: 1.6em;
+        color: #333;
+}
+table, tr, td, th{
+    border-collapse: collapse;
+    border: 2px solid;
+    border-color:rgb(198, 197, 197);
+    padding: 20px;
+    
+}
+tr:nth-child(even){
+    background-color: rgb(243, 240, 240);
+    
+}
+th{
+    text-align: center;
+    
+    
+}
+td{
+    padding-left: 10px;
+    
+}
+table{
+    width: 100%;
+    
+}
+.fonform{
+    background-image: url(./instructions/ressources/map-image.png);
+    background-color: black;
+    display: flex;
+    padding: 40px;
+    
+    text-align: center;
+
+}
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color: rgb(243, 240, 240);
+    border: 2px solid;
+    border-radius: 10px;
+    padding-right: 150px;
+
+}
+.aspect1{
+    margin-right: 40px;
+   
+}
+form button{
+  background-color: #0e9af2;
+  color: white;
+}
+textarea{
+    border-color: rgb(243, 240, 240);
+    border: 2px solid;
+    border-radius: 10px;
+    padding-right: 200px;
+    
+}
+.pagination{
+   
+    display: inline-block;
+    color: black;
+  padding: 8px 16px;
+  transition: background-color .3s;
+  margin-top: 20px;
+ 
+}
+.pagination a{
+   
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    color: white;
+    background-color: #0e9af2;
+    margin: 15px;
+    padding: 20px;
+    
+}
+.pagination a.active {
+background-color:#ddd
+}
+.pagination a.active2{
+    background-color: rgb(200, 193, 193);
+}
+
+.pagination a:hover:not(.active,.active2) {
+    background-color: white;
+    color: #0e9af2;
+    border-color: #0e9af2;
+}
+i{
+    font-size: 2rem;
+}
+form{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+button a:hover{
+    background-color: white;
+    color: #0e9af2;
+    border: 1px solid;
+    border-color: #0e9af2;
+    /* padding: 10px; */
+    border-radius: 0.5%;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}

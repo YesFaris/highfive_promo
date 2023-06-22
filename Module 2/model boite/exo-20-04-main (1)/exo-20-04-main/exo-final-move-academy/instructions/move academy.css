@@ -1,0 +1,119 @@
+nav{
+    background-color: #7e4a7c;
+    display: flex;
+    justify-content: space-between;
+    font-family: Economica;
+    list-style: none;
+    justify-content: center;
+    align-items: center; 
+    text-transform: uppercase;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+    color: #363636;
+    font-family: "Open Sans";
+    
+    
+}
+
+h1, h3{
+    color:#7e4a7c ;
+    font-family: Economica;
+}
+h2{
+    color: #b878b5;
+    font-family: Economica;
+    font-size: 40px;
+}
+main a{
+    color: white;
+    font-size: 20px;
+    border: 1px solid #7e4a7c;
+    background-color: #7e4a7c;
+    text-decoration: none;
+    padding: 10px;
+}
+main a:hover{
+    border: 2px solid #7e4a7c;
+    background-color: white;
+    color: #7e4a7c;
+   
+}
+nav a:hover{
+    border: 2px solid #7e4a7c;
+    background-color: white;
+    color: #7e4a7c;
+    padding: 10px;
+}
+.reseaux{
+    background-color: #7e4a7c;
+}
+.case{
+    background-color: #ffeefe;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    
+   
+}
+header{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background-color:#363636;
+    color: white;
+}
+footer a{
+    color: white;
+    font-family: Economica;
+}
+th{
+    background-color: #7e4a7c;
+    color: white;
+}
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #b878b5;
+    width: 1000px;
+    margin-left: 50px;
+}
+.style{
+    height: 50px;
+}
+.reseaux{
+    background-color: #7e4a7c;
+}
+h1{
+    font-size: 50px;
+}
+h3{
+    font-size: 40px;
+}
+ul{
+    list-style: none;
+}
+h2{
+    flex-basis: 100%;
+}
+.position article{
+    display: flex;
+}
+article div{
+    flex-basis: calc(100%/3);
+}
+main li{
+    list-style:url(./images/puce-fleche.png);
+}

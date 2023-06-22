@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images responsives</title>
+    <link rel="stylesheet" href="imgresp.css">
+</head>
+
+<body>
+
+    <header class="text">
+        <div class="block2">
+            <h1>Images adaptatives</h1>
+            <p>Images adaptatives avec les attributs et sizes / l'élément &lt;picture&gt;</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+
+            <div class="fond">
+                <h2>Démo srcset et descripteur x</h2>
+                <p>Le navigateur sélectionne le version HD de l'image si l'écran est HD.</p>
+                <p>Si le navigateur ne reconnaît pas srcset ou l'écran n'est pas HD, l'image chargée est celle de src.
+                </p>
+                <img srcset="ressources/papillon-600HD.jpg 2x"
+                 src="./ressources/papillon-600.jpg" 
+                 alt="papillon" />
+
+            </div>
+            <div class="fond">
+                <h2>Démo srcset et descripteur w </h2>
+                <p>J'indique au navigateur la taille de l'image pour qu'il puisse sélectionner celle qu'il considère
+                    comme convenant le mieux.</p>
+                <img srcset="./ressources/papillon-600.jpg 600w,
+                            ./ressources/papillon-400.jpg 400w" 
+                            src="ressources/papillon-600HD.jpg" 
+                            alt="papillon">
+
+
+            </div>
+            <div class="fond">
+                <h2>Démo srcset et sizes</h2>
+                <p>sizes indique au navigateur quelle doit être la largeur finale de l'image à l'affichage.</p>
+                <img srcset="./ressources/papillon-600.jpg 600w,
+                            ./ressources/papillon-400.jpg 400w (min-width:400px)" src="ressources/papillon-600HD.jpg"
+                    alt="papillon">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./ressources/clownfish-mobile.jpg">
+                    <source srcset="./ressources/clownfish-tablette.jpg" media="(max-width: 961px)">
+                    <source srcset="./ressources/clownfish-desktop.jpg" media="(min-width: 1025px)">
+                    <img src="./ressources/clownfish-mobile.jpg" alt="clown">
+                </picture>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="block3">
+        <footer class="text">
+            <div class="footer">
+                <a href="http://www.3w Academy.com" target=""> <img src="3wa.png" alt="Mon logo"> </a> </p>
+            </div>
+            <p>Ce matériel pédagogique est la propriété de la <a href="https://#/" target="_blank">3W Academy</a>. Cet
+                exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    </footer>
+
+
+</body>
+
+</html>

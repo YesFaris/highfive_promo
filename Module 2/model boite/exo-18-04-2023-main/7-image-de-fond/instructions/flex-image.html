@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Image</title>
+    <link rel="stylesheet" href="flex image.css">
+</head>
+<body>
+    
+    <header class="text"> 
+        <div class="block2">
+         <h1>Ajouter une image de fond</h1>
+           <p>Comprendre comment afficher et bien positioner une image de fond</p>
+        </div>
+    </header> 
+     
+    <div class="container">
+        <main>
+            <article> 
+
+                <h2>Image versus background</h2>
+                <p class="forme">L'image (ici le logo de la 3WA) est un élément &lt;img&gt; , c'est un contenu et sera référencée par les moteurs de recherche . L'image de fond (les olives) est une décoration déclarée en dans une feuille de style et NE sera PAS référencée par les moteurs de recherche</p>
+                <div class="bg1"> 
+                <img src="./ressources/logo-3wa.png" alt="logo">
+                </div>
+
+            </article> 
+ 
+            <article>
+
+                <h2>Répétiton de l'image.</h2> 
+               
+                <code>background-repeat: repeat;</code>
+                <div class="bg2">
+                    <p>Du texte...</p>
+                    
+                </div>
+                
+
+                <code>background-repeat : no-repeat;</code>
+                    <div class="bg3">
+                <p>Du texte...</p>
+                        
+                    </div>
+                
+                <code>background-repeat: repeat-x;</code>
+                    <div class="bg4">
+                <p>Du texte...</p>
+                        
+                    </div>
+                
+                    <code>background-repeat: repeat-y;</code>
+                    <div class="bg5">
+                <p>Du texte...</p>
+                        
+                    </div>
+
+                
+
+            </article>
+
+
+            <article>
+
+                <h2> Ajuster de la taille de l'image du fond par rapport à son élément.</h2>
+                <code>background-size: contain;</code>
+                  <div class="bg6">
+               <p> Du texte...</p>
+                    
+                  </div>
+
+                <code>background-size: cover; </code> 
+                  <div class="bg7">
+                    
+                  </div>
+
+                
+                <p>background-size: 50%</code>
+                  <div class="bg8">
+                <p>Du texte...</p>
+                   
+                  </div>
+                
+                <code>background-size: 80% 40%</code>
+                 <div class="bg9">
+                  <p>Du texte...</p>
+                 </div>
+
+            </article>
+
+            <article>
+
+                <h2>Positionnement de l'image.</h2>
+                <code>background-position: center</code>
+                <div class="bg10">
+                <p>Du texte...</p>
+                </div>
+                
+
+                <code>background-position: right-top: </code>
+                <div class="bg11">
+                <p>Du texte...</p>
+                </div>
+
+                <code>background-position: right-bottom; </code>
+                <div class="bg12">
+                <p>Du texte...</p>
+                </div>
+
+                <code>background-position: position 80% 40%; </code>
+                <div class="bg13">
+                <p>Du texte...</p>
+                </div>
+
+            </article>
+
+        </main>
+    </div>
+
+    <footer class="block3">
+        <footer class="text">
+        <div class="footer">
+        <a href="http://www.3w Academy.com" target=""> <img src="./ressources/logo-3wa.png" alt="Mon logo"> </a> </p> 
+        </div>
+        <p>Ce matériel pédagogique est la propriété de la <a href="https://#/" target="_blank">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p> 
+        </footer>  
+            </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    /* margin: 0;
+    padding: 0; */
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+
+/* 
+.loader{
+    background-color: #f00;
+    width: 100px;
+    padding: 3rem 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.barre1,
+.barre2,
+.barre3{
+background-color: #fff;
+flex-basis: 10px;
+height: 50px;
+animation: loader-animation 1.5s infinite;
+}
+.barre1{
+animation-delay: 0;
+}
+.barre2{
+animation-delay: 0.2s;
+}
+.barre3{
+  animation-delay: 0.4s;  
+}
+@keyframes loader-animation {
+    from{
+        transform:scaleY(1.5)
+    }
+    to{
+
+    } */
+
+/* .loader2{
+    width: 60px;
+    aspect-ratio: 1;
+    margin-inline: auto;
+    position: relative;
+    animation: loader-animation linear 1s infinite;
+
+}
+.rond1,
+.rond2,
+.rond3{
+    position: absolute;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.rond1{
+border: 2px solid blue;
+}
+.rond2{
+border: 2px solid yellow;
+top: 5px;
+left: 5px;
+}
+.rond3{
+border: 2px solid orange;
+top: -5px;
+left: 5px;
+}
+@keyframes loader-animation {
+    0%{
+        transform: rotate(0eg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+} */
+.loading{
+    border: 2px solid black;
+    /* padding: 20px; */
+    width: 100%;
+   animation-duration: 10s;
+}
+.load{
+    border:1px solid blue;
+    background-image: linear-gradient(red, blue);
+    padding: 18px;
+    max-width: 100%;
+    animation: loading-animat linear 60s infinite;
+    display: flex;
+    justify-content: flex-start;
+    
+   
+}
+@keyframes loading-animat {
+    0%{
+       width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

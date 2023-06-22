@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
+    <style>
+        h2 {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+        .parent{
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    gap: 1rem;
+    background-color: aqua;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+
+}
+article{
+    border:1px solid;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-auto-rows: 50px;
+    gap: 0.5rem;
+}
+.grid div{
+    border: 1px solid;
+    background-color: red;
+}
+.div2{
+    grid-column-start: -3;
+    grid-column-end: -1;
+}
+.div3{
+    grid-column-start: 1;
+    grid-column-end: -2;
+}
+.div4{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <article>
+            <h2><i class="fa-solid fa-user-tie"></i>Pas de profil type</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum eius possimus laborum impedit minus provident dolore deserunt dignissimos saepe. Modi quasi corporis fugit ea suscipit cupiditate nesciunt voluptatum animi.</p>
+        </article>
+        <article>
+            <h2><i class="fa-solid fa-graduation-cap"></i>BAC + 2 et concours</h2>
+            <p>Ipsum nobis beatae quod ea assumenda nihil perferendis, obcaecati voluptate vero, optio tempore reiciendis quaerat ducimus. Quaerat ipsum ab accusantium iure odio possimus, voluptate commodi optio repellendus cupiditate sapiente reiciendis.</p>
+        </article>
+        <article>
+            <h2><i class="fa-solid fa-square-check"></i>Pédagogie active</h2>
+            <p>Praesentium reiciendis unde natus velit accusamus consectetur, dolorum adipisci eligendi! Natus optio sequi cupiditate! Ducimus veritatis sunt, corrupti possimus modi molestiae earum architecto aliquam laudantium magnam autem quos. Earum, veritatis.</p>
+        </article>
+        <article>
+            <h2><i class="fa-solid fa-eye"></i>Suivi inarticleiduel</h2>
+            <p>Iure perspiciatis quae, fugit doloremque cum consectetur, ipsum rerum magni ipsam reiciendis dolores maiores inventore, tempore obcaecati! Nostrum architecto explicabo recusandae eum doloremque, illum tempora iste earum! Quisquam, quaerat obcaecati?</p>
+        </div>
+    </div>
+   <h1>CSS Grid</h1>
+    <div class="grid">
+        
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+    </div>
+</body>
+</html>

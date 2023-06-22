@@ -1,0 +1,88 @@
+h1{
+  color:#dd5735;
+}
+.block
+{
+        margin: 10px;
+        font-size: 20px;
+        background-color: rgba(0,0,0,0.1)
+}
+ 
+.text{
+     text-align: center;
+}
+
+
+.block2{
+        border: 1px solid;
+        border-color:#dd5735; 
+	background-color: rgba(0,0,0,0.1);
+}
+.block3{
+        border: solid; 
+        border-color: rgba(0,0,0,0.2);
+        background-color: rgba(1,1,1,0.1);
+        padding: 20px;
+        margin: 5px;
+}
+
+body{
+    font-family: Muli, sans-serif;
+    font-weight: 400;
+    background-color: rgb(221, 217, 217);
+} 
+
+a {
+   text-decoration: none;
+   color: #dd5735;
+}
+.footer img { 
+       width: 110px;
+       margin-top: 6px;
+}
+
+h1,
+h2, 
+h3{
+   font-family: Barriecito, sans-serif;
+   font-weight: 7002
+}
+.color{
+        color: #dd5735; 
+}      
+
+@font-face {
+        font-family: Muli;
+        src: url("ressources/Muli/Muli-Regular.ttf");
+        font-style: normal;
+        font-weight: 400;
+}
+@font-face {
+        font-family: Muli;
+        src: url("ressources/Muli/Muli-BoldItalic.ttf");
+        font-style: normal;
+        font-weight: 700;
+}
+@font-face {
+        font-family: Muli;
+        src: url("ressources/Muli/Muli-Italic.ttf");
+        font-weight:  400;
+}
+@font-face {
+        font-family: Muli;
+        src: url("ressources/Muli/Muli-Bold.ttf");
+        font-style: normal;
+        font-weight: 700;
+}
+.facebook{
+        color:#0575c5;
+        font-size: 2rem;
+}
+.twitter{
+        color:#1da1f2;
+        font-size: 2rem;
+}
+.youtube{
+        color:#f00;
+        font-size: 2rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ressources/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./ressources/owl-carousel/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./ressources/owl-carousel/owl.carousel.min.js"></script>
+    <title>Owlcarousel</title>
+    <style>
+     .item{
+        border: 1px solid;
+        height: 5rem;
+        font-size: 2rem;
+     }
+     .owl-nav{
+        font-size: 3rem;
+        color: blue;
+        font-weight: bold;
+     }
+     
+    </style>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <img src="./ressources/images/hollywood1.jpg" alt="">
+        <img src="./ressources/images/hollywood2.jpg" alt="">
+        <img src="./ressources/images/hollywood3.jpg" alt="">
+        <img src="./ressources/images/hollywood4.jpg" alt="">
+        <img src="./ressources/images/hollywood5.jpg" alt="">
+        <img src="./ressources/images/hollywood6.jpg" alt="">
+        <img src="./ressources/images/hollywood7.jpg" alt="">
+        
+    </div>
+    <script>
+        $(function(){
+            $(".owl-carousel").owlCarousel({
+                nav:true,
+                items:3,
+                loop:true,
+            });
+           
+        });
+    </script>
+</body>
+</html>

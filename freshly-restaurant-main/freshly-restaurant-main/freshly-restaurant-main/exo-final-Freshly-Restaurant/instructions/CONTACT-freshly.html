@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feshly Restaurant</title>
+    <script src="https://kit.fontawesome.com/f2bff60a32.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./ressources/images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <script src="./slick/slick.min.js"></script>
+    <script src="./freshly.js"></script>
+    <link rel="stylesheet" href="freshly.css">
+    <link rel="stylesheet" href="freshlyresponsive.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navigateur">
+            <a href="#"><img src="./ressources/images/logo.png" alt="logo F-R" width="100"><span>freshly
+                    restaurant</span></a>
+            <nav>
+                <ul>
+                    <li><a href="./freshly.html">Home</a></li>
+                    <li><a href="./ABOUT-freshly.html">About</a></li>
+                    <li><a href="./MENUS-freshly.html">Menus</a></li>
+                    <li><a class="activepage" href="./CONTACT-freshly.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <article>
+                <h1>Contact us</h1>
+                <p class="contactp">If you want a reservation, please complete this form.</p>
+                <p class="italic">fields with <span></span> are required.</p>
+
+                <form>
+                    <div class="formulaire">
+                        <section class="reservation">
+                            <fieldset>
+
+                                <legend>Reservation</legend>
+
+                                <label for="fdate">Date</label>
+                                <input type="date" name="date" id="date" placeholder="jj/ mm / aaaa">
+                                <label for="ftime">Time</label>
+                                <input type="time" name="time" id="time" placeholder="--:--">
+                                <label for="fnumber">Number of guests</label>
+                                <input type="number" name="number" id="number">
+                            </fieldset>
+
+                        </section>
+                        <section class="details">
+                            <fieldset>
+                                <legend>Details</legend>
+                                <label for="fname">Name</label>
+                                <input type="name" name="name">
+                                <label class="Email" for="femail">Email</label>
+                                <input type="email" name="email" id="time">
+                                <label for="ftel">Telephone</label>
+                                <input type="tel" name="tel" id="tel">
+                            </fieldset>
+
+                        </section>
+                    </div>
+
+                    <section>
+                        <fieldset>
+                            <legend>Futur request</legend>
+                            <textarea name="text" id="text"></textarea>
+                        </fieldset>
+                        <input type="submit" value="RESERVE">
+
+                    </section>
+
+                </form>
+            </article>
+            <article>
+                <h2>Our location</h2>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <section>
+                <h4>Opening hours</h4>
+                <p>Monday: Closed</p>
+                <p>Tue-Wed : 9am - 10pm</p>
+                <p>Thu-Fri : 9am - 10pm</p>
+                <p>Sat-Sun : 5am - 10pm</p>
+            </section>
+            <section>
+                <h4>Contact</h4>
+                <address>13 Christopher Street <br> New York,<br> NY<br> 10014-3543</address>
+                <a href="tel:+01 2000 800 9999"></a>
+            </section>
+            <section>
+                <h4>Social netwoks</h4>
+                <i class="fab fa-facebook-f facebook"></i>
+                <i class="fab fa-instagram instagram"></i>
+                <i class="fab fa-pinterest pinterest"></i>
+            </section>
+        </div>
+        <section class="lastfooter">
+            <img src="./ressources/images/3wa.png" alt="logo 3wa" width="50px">
+            <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition<a href="#"> pour l'usage personnel des
+                    étudiants. Pas de Rediffusion-Attribution-Pas d'utlisation Commercial - Pas de Modification-
+                    International.</a>Les autorisations au-delà du champ de cette license peuvent être obtenues auprès
+                de<a href="#">Contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="#"> Catherine Denos.</a>
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>

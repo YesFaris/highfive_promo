@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- importation du jQuery -->
+        <script src="jquery-3.7.0.min.js"></script>
+    <title>jQuery</title>
+</head>
+<body>
+    <p id="paragraph">Appuyer sur "Cacher" ou sur "Afficher" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quas temporibus vero deserunt pariatur. Modi minus tenetur beatae ipsa corporis!</p>
+    <button id="hide">Cacher</button>
+    <button id="show">Afficher</button>
+    <button id="toggle">Toggle</button>
+    <button id="css">Colorier</button>
+
+    <!-- Code Personnalisé -->
+    <script>
+        $(document).ready(function () { 
+            // Votre code jquery ici* 
+            $("#hide").click(function(){
+                $("p").hide(1000);
+            });
+
+            $("#show").click(function(){
+                $("p").show(1000);
+            });
+            $("#toggle").click(function(){
+                $("p").toggle(1000);
+            });
+            //   css ("propriété", "valeur")//
+            /* css({ "prop 1": val 1,
+                    "prop 2": val 2,
+                    ...
+
+             }) */
+            $("#css").click(function(){
+                $("p").css("background-color","red");
+            });
+        });
+       
+
+    </script>
+    <!-- Code Personnalisé -->
+</body>
+</html>

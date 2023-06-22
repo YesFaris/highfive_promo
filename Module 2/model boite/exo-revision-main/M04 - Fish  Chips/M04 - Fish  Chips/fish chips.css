@@ -1,0 +1,139 @@
+.body{
+    background-image: url("./img/fond.png");
+    line-height: 1.5;
+    font-family: "Open Sans";
+    
+}
+.header{
+    text-align: center;
+    background-color:rgba(52, 177, 178, 1); 
+    border: 2px solid rgb(6, 104, 104, 0.5);
+}
+h1{
+    font-size: 2.5em;
+    font-family: serif;
+}
+nav li{
+    list-style: none;
+    margin-left: 30px;
+   
+   
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+    font-size: 27px;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+main{
+    max-width: 1000px;
+    margin-inline: auto;
+    
+}
+.texte{
+    text-align: center;
+    max-width: 700px;
+    margin-inline: auto;
+}
+.block{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.bloc1{
+background-color: rgba(182, 222, 220, 1);
+margin-right: 20px;
+padding: 20px;
+width: 70%;
+}
+
+.float{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.space{
+    margin-right: 40px;
+   
+}
+.bloc2{
+background-color:rgba(52, 177, 178, 1);
+border: 2px solid rgb(6, 104, 104, 0.5) ;
+padding: 10px;
+color: #fff;
+margin-bottom: 200px;
+width: 30%;
+
+}
+.bloc2 h4{
+    font-size: 1.4em;
+    font-family: serif;
+   padding-top: -160px;
+    
+}
+.alignement{
+    display: flex;
+}
+footer{
+    text-align: center;
+}
+.bloc1 a {
+    border: 1px solid;
+    border-color:rgba(52, 177, 178, 1) ;
+    background-color:rgba(52, 177, 178, 1);
+    padding: 10px;
+    color: white;
+    float: right;
+    margin-right: 25px;
+}
+.bloc1 h2{
+    text-align: center;
+    font-size: 3.5em;
+    font-family: serif;
+
+}
+.bloc1 span{
+    color:rgba(52, 177, 178, 1);
+}
+.bloc2 span, h5{
+    color: rgba(172, 218, 217, 1);
+}
+.bloc1 img{
+    border-radius: 50%;
+}
+.bloc1 a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #fff;
+    color: rgba(52, 177, 178, 1);
+    border: 1px solid rgba(52, 177, 178, 1);
+    
+}
+.bloc2 img{
+   float: right;
+   position: relative;
+   top: -60px;
+   right: -100px;
+   
+}
+.bloc1 h3{
+    text-align: center;
+}
+h4{
+    display: inline;
+}
+.blue{
+    color:  rgba(52, 177, 178, 1);
+}
+footer a{
+    color:rgb(31, 31, 222);
+}

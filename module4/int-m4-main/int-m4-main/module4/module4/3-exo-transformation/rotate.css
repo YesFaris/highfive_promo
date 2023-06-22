@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+h1{
+    color:#dd5735;
+    
+  }
+  
+.text{
+       text-align: center;
+  }
+  
+  
+.block2{
+          border: 1px solid;
+          border-color: tomato; 
+      background-color: #444;
+      
+  }
+.block3{
+          border: 1px solid; 
+          border-color: rgba(0, 0, 0, 0.);
+          background-color: #444;
+          margin-top: 20px;
+          
+  }
+  
+body{
+      font-family: sans-serif;
+      background-color: rgba(0,0,0,0.1);
+      line-height: 1.5;
+     margin-inline: auto;
+}       
+ main{
+  max-width: 1000px;
+  margin-inline: auto;
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+  .fleche img{
+    padding: 40px;
+    transform: rotate(90deg);
+    transition-timing-function: ease-in-out;
+    transition: all 2s;
+ }
+ .fleche img:hover{
+    transform: rotate(0deg); 
+ }
+ .projet img{ 
+    vertical-align: middle;
+    transition: all 0.5s;
+    
+ }
+ main p{
+    color: #dd5735;
+ }
+ .projet {
+    position: relative;
+    border: 10px solid #dd5735;
+    border-radius: 50%;
+    padding: 1rem;
+    /* margin-top: 30px; */
+    width: 300px;
+    height: 300px;
+
+ }
+ .projet img:hover{
+    transform: scale(0.7);
+ }
+ main p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5;
+ }
+ .projet:hover p{
+    opacity: 1;
+    transform: scale(1) translateY(-0.7rem);
+ }
+ .carre{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: rgb(223, 18, 18);
+    display: flex;
+ }
+ div.carre:hover div.fond{
+    animation-name: bat;
+    animation-duration: 1.5s;
+    animation-iteration-count:infinite ;
+    /* animation-direction: alternate; */
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+
+ }
+ div.carre:hover div.fond2{
+   animation-name: bat;
+   animation-duration: 1.5s;
+   animation-iteration-count:infinite ;
+   /* animation-direction: alternate; */
+   animation-timing-function: ease-in-out;
+   animation-delay: 0.2s;
+
+}
+div.carre:hover div.fond3{
+   animation-name: bat;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   /* animation-direction: alternate; */
+   animation-timing-function: ease-in-out;
+   animation-delay: 0.4s;
+
+}
+ .fond{
+background-color: white;
+height: 80px;
+width: 100px;
+margin: 10px;
+ }
+ .fond2{
+   background-color: white;
+   height: 80px;
+   width: 100px;
+   margin: 10px;
+    }
+    .fond3{
+      background-color: white;
+      height: 80px;
+      width: 100px;
+      margin: 10px;
+       }
+  .fond:hover{
+   /* transform: scaleY(2); */
+   animation-name: bat;
+   animation-duration: 0.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+  }      
+  @keyframes bat {
+   /* from {
+      transform: scale(0.5);
+   } */
+   0%{
+      transform: scale(1.5);
+   }
+  }                                                               
+
+ /* @keyframes carre {
+0%{
+    background-color: aqua;
+    transform:translate(0,0)
+}
+25%{
+   background-color: green;
+   transform: rotate(190deg) ;
+}
+50%{
+   background-color: red;
+   transform:translate(200px, 200px);
+
+}
+75%{
+   background-color: pink;
+   transform:translate(0px, 200px);
+}
+100%{
+   background-color: grey;
+   transform:translate(0,0)
+}
+   
+   
+ } */

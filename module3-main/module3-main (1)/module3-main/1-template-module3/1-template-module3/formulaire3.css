@@ -1,0 +1,158 @@
+h1{
+    color:#dd5735;
+    
+  }
+  
+.text{
+       text-align: center;
+  }
+  
+  
+.block2{
+          border: 1px solid;
+          border-color: tomato; 
+      background-color: #444;
+      
+  }
+.block3{
+          border: 1px solid; 
+          border-color: rgba(0, 0, 0, 0.);
+          background-color: #444;
+          margin-top: 20px;
+          
+  }
+  
+body{
+      font-family: sans-serif;
+      background-color: rgba(0,0,0,0.1);
+      line-height: 1.5;
+     margin-inline: auto;
+}       
+ main{
+  max-width: 1000px;
+  margin-inline: auto;
+ }
+.footer img { 
+         width: 70px;
+         margin-top: 6px;
+}
+a{
+  color: #dd5735;
+}
+footer{
+  color:#eee;
+}
+button{
+    background-color: #dd5735;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #fff;
+    font-size: 1.6em;
+    border-color: #dd5735;
+    border-radius: 0.5em;
+    cursor: pointer;
+  
+}
+fieldset{
+    border-radius: 0.5em;
+    margin-block: 2em;
+    padding: 1.6em;
+}
+form{
+    border-radius: 0.5em;
+    margin-block: 2em;
+}
+legend{
+    padding-inline: 1em;
+
+}
+input{
+    padding-block: 0.5em ;
+    padding-inline: 1em ;
+    font-size: 1.6em;
+    border-radius: 0.5em ;
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+    flex-basis: 60%;
+}
+button:hover{
+    background-color: #fff;
+    color:#dd5735;
+}
+select,
+textarea{
+display: block;
+width: 100%;
+margin-block: 0.5em;
+border-radius: 0.5em;
+}
+.button{
+    border: 1px solid rgb(156, 155, 155);
+   /* margin-left: 100px; */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    flex-basis: 30%;
+}
+select{
+    padding: 1rem;
+}
+table, th, td, tr, tfoot{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+}
+th, td, tr, tfoot{
+    width:5%;
+}
+tr:nth-child(2){
+    background-color: rgb(209, 208, 208);
+}
+tfoot, th{
+    text-align: center;
+}
+article{
+    background-color: white;
+    padding: 1px;
+    padding-left: 15px;
+}
+.card{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    
+}
+.parent{
+    border: 1px dashed #dd5735;
+
+}
+.code{
+    background-color: rgb(205, 205, 205);
+    border:1px solid rgb(181, 179, 179);
+    padding: 10px;
+}
+.gutter{
+    margin: 15px;
+    
+}
+.form1{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+.form2{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px;
+
+}

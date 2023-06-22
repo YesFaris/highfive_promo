@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* body */
+body{
+   background-color: #ededed;
+   margin-top: 0%;
+   line-height: 1.5;
+   font-family: "Source Sans Pro";
+
+}
+ main img{
+    max-width: 200px;
+}
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    background-color: white;
+}
+.wrapper{
+    max-width: 1100px;
+    margin-inline: auto;
+    background-color: white;
+}
+/* header */
+nav{
+    font-family: "Mali";
+}
+h1,h2,h3{
+    font-family: "Mali";
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav li{
+    list-style: none;
+   
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(230, 226, 226);
+    padding: 10px;
+    border-left:2px solid #2f83a5;
+    border-bottom: 2px solid #2f83a5;
+    transition: 0.5s;
+}
+nav a:hover{
+   border: 1px solid black;
+   background-color: #000;
+   color: #ededed;
+
+}
+header{
+    display: flex;
+}
+/* main */
+main{
+    max-width: 1200px;
+    margin-inline: auto;
+
+}
+
+.fond{
+    background-image: url(./images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    height: 300px;
+    text-align: center;
+
+}
+h1{
+    color: red;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(1100px, 1fr));
+    width: fit-content;
+    gap: 1rem;
+}
+.img11,
+.img3,
+.img5,
+.img6,
+.img7,
+.img15,
+.img16{
+    grid-row: span 2;
+}
+.rebrique{
+    display: flex;
+}
+.rebrik{
+    background-color: white;
+    min-width: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+/* footer */
+i{
+   margin-right: 10px;
+
+}
+form{
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+/* button{
+    background-color: white;
+    border: 1px solid white;
+    padding: 7px;
+    display: block;
+    margin-top: 10px;
+} */
+::placeholder{
+    color:#e777b1 ;
+}
+input{
+    padding: 10px;
+    
+}
+.footer1{
+    background-color: #e1005a;
+    color:white;
+    display: flex;
+    justify-content:space-around ;
+}
+.footer2{
+    padding-top: 20px;
+    background-color: #444;
+    text-align: center;
+    color: white;
+}
+.footer2 a{
+    text-decoration: none;
+    color: #d45937;
+}
+.forme{
+    padding-right: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border:  rgba(255, 255, 255, 0.8);
+}
+input{
+    color: #e1005a;
+    border: 1px solid white;
+}

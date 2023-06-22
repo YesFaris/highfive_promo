@@ -1,0 +1,118 @@
+body {
+    font-family: Lato, serif;
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    color: #40CCEA;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+
+span {
+    color: red;
+}
+
+.color {
+    color: rgb(167, 113, 13);
+    display: inline-block;
+}
+
+.fond {
+   display: inline;
+   background-color: rgb(176, 173, 173);
+
+}
+
+
+
+.footer {
+    text-align: center;
+    background-color: #0096D0;
+    color: white;
+
+}
+.float1 {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+   
+}
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin-inline: auto;
+    line-height: 1.6em;
+    color: #333;
+    text-align: justify;
+}
+
+.image {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+nav {
+    background-color: #0096D0;
+    padding-block: 5px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+.container2{
+        width: 90%;
+        max-width: 900px;
+        margin-inline: auto;
+        color: #333;
+        background-color:rgb(242, 242, 242) ;
+        column-count: 2;
+        padding: 10px;
+        margin: 10px;
+        line-height: 1.5;
+        display: inline-block;
+        font-weight: 400;
+        
+       
+        
+
+}
+
+.taille{
+    background-color: white;
+    text-align: justify;
+    margin: 10px;
+   max-height: max-content;
+   max-height: max-content;
+   overflow: hidden;
+}
+h4{
+    text-align: center;
+}
+ section img{
+    width: 100%;
+ }
+ .taille p{
+    padding: 10px;
+ }
+ footer a{
+    color: white;
+ }

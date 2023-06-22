@@ -1,0 +1,22 @@
+/*.block1{
+border-style: solid;
+border-color: rgba(0,0,0,0.2); 
+background-color: rgba(0,0,0,0.1);
+}
+
+.block2{
+border-style: solid;
+border-color: rgba(0,0,0,0.2); 
+background-color: rgba(0,0,0,0.1); 
+} 
+
+.block3{
+border-style: solid;
+border-color: rgba(0,0,0,0.2); 
+background-color: rgba(0,0,0,0.1);
+}*/
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12, .block13, .block14, .block15, .block16{
+	border-style: solid;
+border-color: rgba(0,0,0,0.2); 
+background-color: rgba(0,0,0,0.1);
+}

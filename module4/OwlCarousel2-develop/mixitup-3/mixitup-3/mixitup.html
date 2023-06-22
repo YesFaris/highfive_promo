@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./dist/mixitup.min.js"></script>
+    <title>Mixitup</title>
+    <style>
+        .item {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid lightgrey;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+            margin-right: 1rem;
+        }
+
+        .item::before {
+            content: "";
+            display: block;
+            height: 1rem;
+        }
+
+        .bleu::before {
+            background-color: blue;
+        }
+
+        .green::before {
+            background-color: green;
+        }
+
+        .red::before {
+            background-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mixitup</h1>
+    <p>Le plugin Mixitup est une bibliothèque JavaScript populaire utilisée pour créer des filtrages et des animations
+        de tri pour les éléments d'une page web. Il offre une solution flexible pour organiser, trier et filtrer des
+        contenus tels que des images, vdes vidéos , des articles de blog , des produits, etc.</p>
+
+
+    <button data-filter="all">Tous</button>
+    <button data-filter=".green">Green</button>
+    <button data-filter=".red">Red</button>
+    <button data-filter=".bleu">Bleu</button>
+
+    <div class="parent">
+        <div class="mix item bleu">Bleu</div>
+        <div class="mix item red">Red</div>
+        <div class="mix item bleu">Bleu</div>
+        <div class="mix item red">Red</div>
+        <div class="mix item green">Green</div>
+        <div class="mix item green">Green</div>
+        <div class="mix item red">Red</div>
+        <div class="mix item green">Green</div>
+        <div class="mix item bleu">Bleu</div>
+    </div>
+    <script>
+        let mixer = mixitup(".parent")
+    </script>
+</body>
+
+</html>

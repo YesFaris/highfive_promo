@@ -1,0 +1,137 @@
+h1{
+    color:#dd5735;
+  }
+  
+.text{
+       text-align: center;
+  }
+  
+  
+.block2{
+          border: 1px solid;
+          border-color: tomato; 
+      background-color: #444;
+      color: white;
+  }
+.block3{
+          border: 1px solid; 
+          border-color: rgba(0, 0, 0, 0.);
+          background-color: #444;
+          margin-top: 20px;
+          
+  }
+  
+body{
+      font-family: sans-serif;
+      background-color: rgba(0,0,0,0.1);
+      line-height: 1.5;
+      background-color: #ddd;
+      max-width: 1000px;
+     margin-inline: auto;
+  
+  }       
+ 
+  
+.footer img { 
+         width: 70px;
+         margin-top: 6px;
+}
+a{
+  color: #dd5735;
+}
+footer{
+  color:#eee;
+}
+
+.forme{
+  background-color: white; 
+  border-color: white;
+}
+main{
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container{
+max-width: 1000px;
+margin-inline: auto;
+}
+.bg1{
+  background-image: url("./ressources/large.jpg")
+
+}
+article code {
+  background-color: #ddd;
+  border: 1px solid rgb(170, 169, 169);
+  padding: 0.3em;
+}
+main div{
+  background-color: teal;
+  color: white;
+  padding: 2em;
+  min-height: 20em;
+  max-width: 40em;
+}
+.bg2{
+background-repeat: repeat;
+background-image: url("./ressources/small.jpg");
+}
+.bg3{
+  background-repeat: no-repeat;
+background-image: url("./ressources/small.jpg");
+  
+}
+.bg4{
+  background-repeat: repeat-x;
+  background-image: url("./ressources/small.jpg");
+}
+.bg5{
+  background-repeat: repeat-y;
+  background-image: url("./ressources/small.jpg");
+}
+.bg6{
+  background-repeat: no-repeat;
+  background-size: contain;
+   background-image: url("./ressources/large.jpg"); 
+}
+.bg7{
+  background-size: cover;
+  background-image: url("./ressources/large.jpg");
+}
+.bg8{
+  background-repeat: no-repeat;
+  background-size: 50% ;
+  background-image:url("./ressources/large.jpg");
+}
+.bg9{
+  background-repeat: no-repeat;
+  background-size: 80% 40%;
+  background-image:url("./ressources/large.jpg");
+}
+.bg10{
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-image: url("./ressources/small.jpg");
+}
+.bg11{
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-image: url("./ressources/small.jpg");
+}
+.bg12{
+  background-repeat: no-repeat;
+   background-position: right bottom ;
+   background-image: url("./ressources/small.jpg");
+}
+.bg13{
+  background-repeat: no-repeat;
+   background-position:  80% 40%;
+   background-image: url("./ressources/small.jpg");
+}
+code{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

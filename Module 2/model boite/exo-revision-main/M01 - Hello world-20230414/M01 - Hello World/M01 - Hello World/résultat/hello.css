@@ -1,0 +1,34 @@
+.color1{
+    color:red;
+}
+.color2{
+    color: blue;
+}
+.color3{
+    color: green;
+}
+.bg-color1{
+    background-color: red;
+
+}
+.bg-color2{
+    background-color: blue;
+}
+.bg-color3{
+    background-color: green;
+}
+.p1{
+    font-family: Arial, serif;
+}
+.p2{
+    font-family: monospace, serif;
+}
+.block{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}

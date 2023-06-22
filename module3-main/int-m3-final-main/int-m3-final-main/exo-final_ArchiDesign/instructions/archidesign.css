@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* body */
+body{
+    font-family: "Nunito";
+   font-size: 18px;
+}
+/* header */
+nav, h1, h2, h3{
+font-family: "Fjalla one";
+}
+span{
+    color: white;
+    font-size: 20px;
+    font-family: "Fjalla one";
+}
+header{
+    background-color: #00748d;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 30px;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+  justify-content: space-between;
+}
+nav li{
+    list-style: none;
+    font-size: 20px;
+}
+ul > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+ul > li > a:hover{
+    background-color: white;
+    color: #00748d;
+}
+/* main */
+ main a{
+    text-decoration: none;
+    border: 1px solid #00748d;
+    background-color: #00748d;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+main{
+    max-width: 1500px;
+    margin-inline: auto; 
+
+
+}
+.bgi{
+    background-image: url(./images/bg-header.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+h1{
+    text-transform: uppercase;
+    background-color: #cb8606;
+    color: white;
+    /* display: inline-block; */
+    padding: 10px;
+    font-size: 30px;
+    
+
+}
+h2{
+    color: #00748d;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+.fond{
+    background-color: white;
+    color:#00748d;
+    text-align: center;
+   padding: 10px;
+
+}
+.flex{
+    display: flex;
+    margin-bottom: 80px;
+}
+.images {
+    display: flex;
+gap:40px;
+justify-content: center;
+align-content: center;
+}
+main img{
+    border: 3px solid #00748d;
+}
+main i{
+    background-color: #cb8606;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+main div p{
+    text-align: center;
+}
+/* footer */
+footer{
+    margin-top: 20px;
+    background-color: #444;
+    color: white;
+    
+}
+.fot{
+font-size: 25px;
+}
+
+.ft{
+    padding-top: 20px;
+    text-align: center;
+}
+.pied{
+    background-color: #00748d;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 30px;
+}
+footer a > i{
+color: white;
+}

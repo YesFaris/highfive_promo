@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+      <head>
+            <meta charset="utf-8"> 
+            <link> 
+             h1 { 
+                  color:red;
+              } 
+            </link>
+               
+            <link> 
+             .colored { 
+                        color:green;
+              }
+             </link>
+                   
+            <title>Intégration</title>
+        
+       </head>
+                
+       <body>  
+
+               <h1> Les principales balises </h1>
+               <h2> Les balises de type bloc</h2>
+               <h3> Un sous-titre de niveau 3</h3>
+            
+             <p>Un paragraphe</p>
+             <p>Un second paragraphe séparé du premier par une marge<p>
+             <p>Le contenu d'un élément (par exemple un paragraphe) est placé entre les balises ouvrante <p> et la balise fermante </p> de cet élément.</p>
+             <p>Pour écrire les caractères < (inférieur à), > (supérieur à) et & (esperluette) il faut utiliser des entitées HTML.</p>
+                 <pre>Ce texte est pré-formaté.
+	L'élément respecte les caratères spéciaux de la source comme les sauts de ligne,
+	les tabulations et
+	les espaces [    ].
+	Par défaut, l'élément affiche son contenu avec une police à chasse fixe (monospace).
+	L'élément est généralement utilisé pour écrire du code.</pre>         
+               
+              <div class="colored"> L'élément &lt;div&gt; est générique sans aucun sens particulier, il est utilisé pour structurer le document.<br>
+Un second élément &lt;div&gt; n'est pas séparé du précedant par une marge (par défaut)</p></div class="colored">
+                    <h3>Les listes (un autre sous-titre de niveau 3)</h3>
+                    <ol>
+                        <li>Une</li>
+                        <li>liste</li>
+                        <li>ordonnéé</li>
+
+                    </ol> 
+                    <ul> 
+                        <li>Une</li>
+                        <li>liste</li>
+                        <li>non</li>
+                        <li>ordonneé</li> 
+                     <p>Terme 1<p> 
+                                       <p>Définition 1<p>
+                     <p>Terme 2<p>
+                                       <p>Définition 2<p>
+<ul> 
+   <ol> 
+          <li>Une</li>
+          <li>Liste</li>
+              <ul> 
+                  <li>avec</li>
+                  <li>une</li> 
+                  <li>liste</li>
+                  <li>imbriquée</li>
+
+              </ul>
+          <li> (attention, l'élément <ul&gt; ne peut contenir que ses éléments <li&gt;)
+  </ol>
+</ul> 
+   <h2>Les balises de type inline (un autre sous-titre de niveau 2)</h2>
+<p>Une <strong>portion de texte importante</strong> placée dans l'élément &lt;strong&gt;.</p>
+
+<p>Une <em>portion de texte emphasée</em> placée dans l'élément &lt;em&gt;.</p>
+
+<p>Un hyperlien vers<a href="htpp://www.3W Academy.com">3W Academy</a>(élément &lt;a&gl;).<p/>
+
+<p>Il existe différents types d'hyperliens :</p>   
+  <ul> 
+
+      <li>Un site internet :<a href="http://www.3W Academy.com">3W Academy</a></li>
+      <li>Une autre page du site internet :<a href="http://www.Nous contacter.com">Nous contacter</a></li>
+      <li>Une adresse email :<a href="http://www.contact@3wa.fr">contact@3wa.fr<a/></li>
+      <li>Un numéro de téléphone: <a href="http://www.01 75 43 42 42.com">01 75 43 42 42</a></li>
+      <li>Une ancre sur la page :<a href="http://www.haut de la page.com">haut de la page.</a> Ce type de lien est souvent utilisé dans la navigation sur les sites internet one-page ou pour revenir en haut de la page.</li>
+
+  </ul>
+          <p> Un lien avec l'attribut target="_blank" s'ouvre dans un nouvel onglet:<a href=http://www.3W Academy.com">3W Academy.</a></p>
+            
+          <p> Une image <img src="./logo-3wa.png" alt="Mon logo">Logo 3W Academy dans un paragraphe (observer l'alignement vertical). L'attribut alt est obligatoire.</p>
+             
+          <p> Une image dans un lien <a href="http://www.3w Academy.com" target=""> <img src="./logo-3wa.png" alt="Mon logo"> </a> </p>
+
+        <p> Un paragraphe contenant un saut</p>
+           de ligne &lt;br&gt;.<br>
+
+  <p> Une abbréviation avec l'élément &lt;abbr&gt;: le code d'une page web est écrit en <abbr title="HyperText Markup Language">HTML</abbr> avec l'attribut title.</p>
+
+  <p> Une définition avec l'élément &lt;dfn&gt;</p>
+
+  <p> Utilisation de l'élément &lt;sub&gt; pour écrire des indices, par exemple dans une formule chimique: 4 NH<sub>3</sub> + 5 O<sub>2</sub> → 4 NO + 6 H<sub>2</sub>O</p>
+
+<p>Utilisation de l'élément &lt;sup&gt; pour écrire des exposants, par exemple dans une formule mathématique: 3<sup>2</sup> = 9 ou un indicateur ordinal: le 3ème arrondissement de Paris.</p>
+
+<p>Utilisation de l'élément &lt;ins&gt; pour indiquer une portion texte insérée et de l'élément &lt;del&gt; pour indiquer une portion de texte supprimée.</p>
+<p>Un exemple de code informatique (ici du JavaScript) dans un élément &lt;code&gt; et un élément &lt;pre&gt;</p>
+      <pre>
+
+	for (let i = 0; i < 5; i++) {
+		console.log(i);s
+
+      </pre>
+	
+<p>Ce texte est contenu dans un élément &lt;span&gt;. Cet élément n'a pas de sens particulier, il est systématiquement utilisé avec du style CSS.</p>
+
+<h2>Bonnes pratiques (un autre sous-titre de niveau 2)</h2>
+<p>Les titres nous permettent de structurer notre texte et de faciliter la lecture. Ils sont également importants pour optimiser le référencement naturel de la page web.</p>
+
+<p>Il ne faut pas sauter des niveaux de titre : on commence toujours par un titre de niveau 1, puis un titre de niveau 2, puis un titre de niveau 3 et ainsi de suite.</p>
+
+<p>Sauter un niveau de titre intermédiaire constitue une mauvaise pratique : par exemple un titre de niveau 1, suivi d'un titre de niveau 3.</p>
+
+<p>Toujours placer les éléments de type inline dans un élément de type bloc (et jamais l'inverse)</p>
+
+<h2>License (un autre sous-titre de niveau 2)</h2>
+<img src="./logo-3wa.png" alt="Mon logo">
+
+<p>Ce matériel pédagogique est la propriété de la <a href="http://www.3W Academy.com">3W Academy</a>. Cet exercice a été réalisé par <a href="http://www.Christiane Dumont.com">Christiane Dumont</a> et Stephane Pereck.</p>
+</body>
+
+</html>
