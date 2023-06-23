@@ -75,18 +75,43 @@ document.addEventListener("DOMContentLoaded", function(){
 let balldirection = 1;
 let ballposition = 0;
 let speed = 5;
-let limit = 30;
+let limit = ball.offsetWidth;
+let limit2 = ball.offsetHeight;
 const windowWidth = window.innerWidth;
-const width = windowWidth - limit;
+const windowHeight = window.innerHeight;
+let width = windowWidth - ball.scrollWidth;
+let height = windowHeight - ball.scrollHeight;
+let positionX = 0;
+let positionY = 0;
+let directionX = 1;
+let directionY = 1;
+
+
 
 
 function animateBall(){
-    ballposition += speed *balldirection;
-    if(ballposition >= width || ballposition <= 0){
-        balldirection *= -1;
+    positionX += speed * directionX;
+    positionY += speed * directionY;
+    if(positionX >= width && positionX >= 0){
+        directionX = -1;
     }
-    ball.style.left = ballposition +"px"
+    else if (positionX <= 0 && positionX === 0){
+        directionX = 1
+    }
+    if(positionY >= height && positionY >= 0){
+        directionY = -1;
+    }
+    else if (positionY <= 0 && positionY ===0){
+        directionY = 1
+    }
+    ball.style.transform = "translateX("+ positionX +"px) translateY(" + positionY + "px)";
     requestAnimationFrame(animateBall);
 }
 animateBall()
+
+
 });
+
+// document.addEventListener("keydown", function(event){
+//     console.log(event.code);
+// });

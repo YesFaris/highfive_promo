@@ -10,7 +10,8 @@ article{
     border-radius: 50px;
 }
 .ball1{
-background-color: rgba(0, 68, 255, 0.644);
+background-color : blue;
+box-shadow: 1px 1px 10px;
 }
 #ballon{
     background-color: rgb(0, 183, 255) ;
