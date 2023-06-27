@@ -9,7 +9,8 @@ div{
 #zombietomb{
     width:100px;
     height:100px;
-    border: 10px solid rgb(89, 36, 175);
-    border-radius: 20px;
-   
+    /* border-bottom: 700px solid rgb(89, 36, 175); */
+    
+   background-image: url(../img/zombie.png);
+
 }
