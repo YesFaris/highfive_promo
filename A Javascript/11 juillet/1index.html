@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vues-js</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js" integrity="sha512-Wbf9QOX8TxnLykSrNGmAc5mDntbpyXjOw9zgnKql3DgQ7Iyr5TCSPWpvpwDuo+jikYoSNMD9tRRH854VfPpL9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <script type="module" src="destructuration.js"></script> -->
+     <!-- <script type="module" src="spread-operator.js"></script> -->
+   <!-- <script type="module" src="ternary-operator.js"></script> -->
+    <!-- <script type="module" src="for-in.js"></script> -->
+    <!-- <script src="for-of.js"></script> -->
+    <!-- <script type="module" src="17exercices.js"></script> -->
+    <div id="app">
+        <h1>{{ msg }}</h1>
+        <button @click="count++">count {{ count }}</button> <br><br>
+        <a href="#" @click.prevent="log">My link</a><br><br>
+
+        <p> Votre nom: <strong>{{ textInput }}</strong> </p>
+        <input id="input" type="text" placeholder="Enter FirstName" v-on:input ="saveInput" :value="textInput"><br><br>
+        
+        <p> {{ textInpute }}</p>
+        <input id="inpute" type="text" placeholder="Enter LastName" v-on:input ="saveInpute" :value="textInpute"><br><br>
+        
+        <input type="password" placeholder="Enter your password" v-on:input ="savePasseword" :value="pwd">
+        <p>{{ pwd }}</p>
+        <h2>checkbox</h2>
+        <div>
+            <input type="checkbox" id="checkbox" v-model="checked" />
+            <label for ="checkbox">{{ checkbox }}</label>
+        </div>
+        <h2>multi checkbox</h2>
+        <div>Noms sélectionnées : {{ checkedNames }}</div>
+
+        <input type="checkbox" id="Martin" value="Martin" v-model="checkedNames">
+        <label for="Martin">Martin</label>
+
+        <input type="checkbox" id="Possidius" value="Possidius" v-model="checkedNames">
+        <label for="Possidius">Possidius</label>
+
+        <input type="checkbox" id="Axel" value="Axel" v-model="checkedNames">
+        <label for="Axel">Axel</label>
+
+        <input type="checkbox" id="Faris" value="Faris" v-model="checkedNames">
+        <label for="maris">Faris</label>
+
+
+        <input type="checkbox" id="Gabriel" value="Gabriel" v-model="checkedNames">
+        <label for="Gabriel">Gabriel</label>
+
+        <h2>Radio</h2>
+        <div>choix: {{ picked }}</div>
+        <input type="radio" id="un" value="Un" v-model="picked"/>
+        <label for="un">Un</label>
+        <input type="radio" id="deux" value="deux" v-model="picked"/>
+        <label for="un">Deux</label>
+
+        <h2>Select</h2>
+        <div>Selection: {{ selected }}</div>
+        <select v-model="selected">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+
+        </select>
+
+    </div>
+    <script type="module">
+        import { createApp } from "https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.esm-browser.min.js" ;
+        // fonction qui permet de monter l'application
+        // const {createApp} = Vue;
+        // on monte l'application Vue dans la div#app
+        createApp({
+            // liste d'option
+            data(){ 
+                
+                return {
+                    msg :"Welcome ",
+                    titleClass : 'title',
+                    count:0, 
+                    textInput : "",
+                    pwd : "",
+                    checkNames : "",
+                    log :"",
+                    textInput:"",
+                    textInpute:"",
+                    checked:"",
+                    checkbox:"",
+                    checkedNames:[],
+                    picked:"",
+
+                };
+                
+            },
+            methods:{
+            //    log(event){
+            //     event.preventDefault();
+            //     console.log('clicked link 🎮');
+            //    }
+               
+               saveInput(e){
+                this.textInput = e.target.value;
+               
+               },
+               saveInpute(e){
+                this.textInpute = e.target.value;
+               
+               },
+               savePasseword(e){
+                this.pwd = e.target.value;
+               }
+            }
+        }).mount("#app")
+    </script>
+
+    <script> 
+    
+    </script>
+</body>
+</html>
