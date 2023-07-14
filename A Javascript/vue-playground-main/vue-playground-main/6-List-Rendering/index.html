@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <title>LISTE</title>
+  <style>
+    h1{
+      color: rgb(58, 188, 240);
+      
+    }
+    input{
+      border-radius: 1rem;
+      margin-top: 20px;
+      padding: 0.5rem;
+    }
+    li{
+      list-style: none;
+      border-bottom: 1px solid grey;
+      margin-top: 10px;
+    }
+    body{
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(207, 207, 207);
+      
+    }
+    .deleted{
+      background-color: rgb(238, 238, 238);
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 25px;
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 5px 5px 0.5px;
+      
+    }
+    .deleted:hover{
+      background-color: red;
+      transition: 0.5s;
+    }
+    .add{
+      background-color: rgb(0, 190, 0);
+      border: none;
+      font-size: 20px;
+      margin-left: 1rem;
+      border-radius: 1rem;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-shadow: 5px 5px 1px;
+    }
+    #app{
+      margin-top: 20px;
+      background-color: #fff;
+      padding-bottom: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  
+  <script type="module">
+  import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.esm-browser.min.js'
+  
+  // give each todo a unique id
+  let id = 0
+  
+  createApp({
+    data() {
+      return {
+        newTodo: '',
+        todos: [
+          { id: id++, text: 'Learn HTML' },
+          { id: id++, text: 'Learn JavaScript' },
+          { id: id++, text: 'Learn Vue' }
+        
+  
+        ],
+        remove:"",
+        
+  
+      }
+    },
+    methods: {
+      addTodo() {
+        this.todos.push( { id: id++, text: this.newTodo })
+      },
+      removeTodo(id) {
+      this.todos.splice(id, 1)
+      }
+    }
+  }).mount('#app')
+  </script>
+  
+  <div id="app">
+    <h1>To do List </i> </h1>
+    <form @submit.prevent="addTodo">
+      <input v-model="newTodo">
+      <button class="add"><i class="fa fa-plus-circle"></i></button>    
+    </form>
+    <ul>
+      <li v-for="(todo, id) in todos" :key="todo.id">
+        {{ todo.text }}
+        <button class="deleted" @click="removeTodo(id)"><i class="fa fa-eraser"></i></button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+       body{ 
+        font-size: 1.2rem;
+        font-weight: 400;
+        background-color: rgb(231, 230, 230);
+        font-family: sans-serif;
+
+       }
+       button{
+        border: 2px solid rgb(0, 190, 0);
+        border-radius: 20px;
+        background-color: white;
+        padding : 10px;
+        transition: 0.5s;
+    }
+    button:hover{
+        background-color: rgb(0, 190, 0);
+        color: white;
+       }
+       .modif{
+        background-color: #fff;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 1px 5px 15px;
+        transition: 0.6s;
+        margin-right: 15rem;
+        margin-left: 15rem;
+        padding: 2rem;
+       }
+       .modif:hover{
+        box-shadow: none;
+       }
+       table{
+        margin-top: 100px;
+        text-align: center;
+        border: 1px solid;
+        border-collapse: collapse;
+        
+       }
+       tr:nth-child(even){
+       /* color:red; */
+       background-color: rgb(190, 190, 201);
+       }
+
+       th{
+       background-color:  rgb(47, 47, 243);
+       color: white;
+       }
+       th,
+       td{
+        border: 1px solid rgb(48, 184, 238) ;
+        padding: 10px;
+        /* background-color: rgb(213, 231, 238); */
+       }
+       .deleted{
+        border: 2px solid red;
+        border-radius: 20px;
+        background-color: red;
+        padding : 10px;
+        transition: 0.5s;
+       }
+       .deleted:hover{
+        background-color: rgb(250, 250, 250);
+        color:red;
+       }
+    </style>
+</head>
+<body>
+    
+    <script type="module">
+        import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.esm-browser.min.js'
+    
+        createApp({
+            data() {
+                return {
+                    todoId: 1,
+                    todoData: null,
+                    users:[],
+                    // users:"",
+                }
+            },
+            methods: {
+                async fetchData() {
+                    this.todoData = null
+                    const res = await fetch(`./todo.json`);
+                    const usersData = await fetch(`./users.json`);
+
+                    this.todoData = (await res.json())[(this.todoId -1)]
+                    this.users = await usersData.json();
+                }
+            },
+            mounted() {
+                this.fetchData()
+            },
+            watch:{
+                todoId(){
+                    this.fetchData();
+                }
+            }
+        }).mount('#app')
+    </script>
+    
+    <div v-cloak id="app">
+        <p>A faire : {{ todoId }}</p>
+        <button @click="todoId++">Tâche suivante</button>
+        <div class="modif">
+            
+            <p v-if="!todoData">Loading...</p>
+            <div v-else >
+                <h1 class="user-id">{{todoData.id}}</h1>
+                <h2 class="user.title">{{ todoData.title}}</h2>
+                <!-- <pre v-else>{{ todoData }}</pre> -->
+            </div>
+        </div>
+        <table>
+            <thead>
+                
+                    <th>ID</th>
+                    <th>Firstname and Lastname</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Archieve</th>
+              
+               
+            </thead>
+            <tbody>
+                <tr v-for ="user in users" :key="user.id">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.phone}}</td>
+                    <td><button class="deleted"><i class="fa fa-archive" style="font-size:20px"></i></button></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
